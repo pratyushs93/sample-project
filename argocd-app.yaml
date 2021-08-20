@@ -7,8 +7,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/pratyushs93/sample-project.git
-    targetRevision: HEAD
-    path: templates
+    targetRevision: main
+    chart: templates
   destination:
     server: https://kubernetes.default.svc
     namespace: sample-project
