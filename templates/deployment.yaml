@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ include "sample-project.fullname" . }}
   labels:
-    {{ include "sample-project.labels" . | nindent 4 }}
+{{ include "sample-project.labels" .  | indent 4 }}    
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
