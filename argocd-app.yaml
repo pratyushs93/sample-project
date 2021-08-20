@@ -6,9 +6,24 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/pratyushs93/sample-project.git
-    targetRevision: main
-    chart: templates
+    repoURL: https://pratyushs93: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@github.com/pratyushs93/sample-project.git
+    targetRevision: 0.1.0
+    path: templates
   destination:
     server: https://kubernetes.default.svc
     namespace: sample-project
+
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: guestbook
+#   namespace: argocd
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://github.com/argoproj/argocd-example-apps.git
+#     targetRevision: HEAD
+#     path: guestbook
+#   destination:
+#     server: https://kubernetes.default.svc
+#     namespace: guestbook
